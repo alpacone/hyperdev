@@ -1,6 +1,6 @@
 {
   "name": "hyperdev",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Redux DevTools for Hyperapp",
   "license": "MIT",
   "repository": "alpacone/hyperdev",
@@ -11,7 +11,7 @@
     "devtools",
     "time travel"
   ],
-  "main": "dist/index.js",
+  "main": "src/index.js",
   "unpkg": "dist/index.js",
   "files": [
     "dist"
