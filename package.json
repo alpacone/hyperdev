@@ -1,0 +1,30 @@
+{
+  "name": "hyperdev",
+  "version": "1.0.1",
+  "description": "Redux DevTools for Hyperapp",
+  "license": "MIT",
+  "repository": "alpacone/hyperdev",
+  "author": "Maxim Samburskiy",
+  "keywords": [
+    "hyperapp",
+    "redux",
+    "devtools",
+    "time travel"
+  ],
+  "main": "dist/index.js",
+  "unpkg": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "fmt": "prettier --write .",
+    "clean": "rimraf dist",
+    "build": "npm run clean && esbuild src/index.js --bundle --minify --format=esm --outfile=dist/index.js",
+    "deploy": "npm run build && npm publish"
+  },
+  "devDependencies": {
+    "esbuild": "^0.14.21",
+    "prettier": "^2.5.1",
+    "rimraf": "^3.0.2"
+  }
+}
